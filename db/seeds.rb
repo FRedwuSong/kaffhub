@@ -10,10 +10,34 @@
 
 Company.destroy_all
 
-Company.create!([{
-                  name: 'Nordic Approach',
-                  active: true,
-                  user_id: 9
-                }])
+Company.create!(
+  [
+    {
+      name: 'Nordic Approach',
+      active: true,
+      user_id: 9
+    },
+    {
+      name: 'Swissopia AG',
+      active: true,
+      user_id: 9
+    },
+    {
+      name: 'TESTONE',
+      active: true,
+      user_id: 9
+    },
+    {
+      name: 'TESTTWO',
+      active: true,
+      user_id: 9
+    },
+    {
+      name: 'TESTTHREE',
+      active: true,
+      user_id: 9
+    }
+  ]
+)
 
 pp 'Company Nordic Approach was be ceeate'
