@@ -1,0 +1,19 @@
+<div class="shopsindex">
+  <div class="pb-4">
+    <h1>All shops</h1>
+    <p>Discover all the shops kaffhub.</p>
+  </div>
+
+  <div class="rounded overflow-hidden shadow-lg grid grid-cols-4 gap-4">
+    <% @shops.each do |shop| %>
+    <div class="px-6 py-4">
+      <img class="w-full" src="https://fakeimg.pl/300/" alt="Sunset in the mountains">
+        <div class="font-bold text-xl mb-2"><%= shop.name %> <%= shop.id %> </div>
+        <div class="buttonofgotoshop flex content-center">
+          <button class="gotoshop_button bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg mx-auto">
+            <%= link_to "Go to shop", shop%>
+          </button>
+        </div>
+    </div>
+    <% end %>
+  </div>
