@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "stimulus-remote-rails": "^4.1.0"
+  }
+}
