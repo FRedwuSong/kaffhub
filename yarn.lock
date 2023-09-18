@@ -2,7 +2,3 @@
 # yarn lockfile v1
 
 
-stimulus-remote-rails@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/stimulus-remote-rails/-/stimulus-remote-rails-4.1.0.tgz#3bc7278bf7eacd83d36446bff767f61047693c37"
-  integrity sha512-ZwaB7rX4eRuYVHWw7zspm41G/7/bXOfsJr7KUR5HiYtaIL6ep+fL99qrI1KmRV0O48/VVa5ZtXcYnGnutxwblw==
