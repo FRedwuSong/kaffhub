@@ -1,0 +1,51 @@
+<div class="productshow w-2/3">
+  <div class="pb-10">
+    <h1 class="text-2xl"><%= @product.name %>'s</h1>
+    <p class="text-sm text-sky-800 hover:underline">Offered by <%= @product.shop.name%></p>
+    <p class="mb-10"></p>
+    <h2 class="text-lg"><%= @product.description.gsub(/\\n/, '<br>').html_safe%></h2>
+  </div>
+  <div class="div0">
+    <div class="div1 border-y py-4 grid grid-cols-3 gap-2">
+      <div class="div11">General information</div>
+      <div class="div12">
+        <p>Variety: @product.variety</p>
+        <p>Processing: @product.process Natural</p>
+        <p>Crop year: 2023<p>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="div2 border-y py-4 grid grid-cols-3 gap-2">
+      <div class="div21">Sensorial information</div>
+      <div class="div22">
+        <p>Cupping score: 86</p>
+        <p> </p>
+        <p>Pre-shipment sample 08.08.23: Intense. Herbal, mild earl grey. Notes of berries, dark spice, cola, roasted nuts, and some nectarine. Liquorice root finish.</p>
+      </div>
+      <div class="div23"></div>
+    </div>
+  </div>
+
+  <div class="bg-gray-200 grid grid-cols-2">
+    <div data-controller="read-more" data-read-more-more-text-value="Read more" data-read-more-less-text-value="Read less">
+      <p class="producer-story-hiden" data-read-more-target="content">Average farm size : 1 - 2 hectares<br><br>Certifications : Organic<br><br>Vegetation: Semi Forested and Garden<br><br>Average farm size: 0.5 - 2ha<br><br>Trees per hectare: 1800 - 2400<br><br>Average cherry yield per tree: 3 kgs<br><br>### Station Description<br><br>This station used to be sourced through a vertically integration agreement with the Haji Betro Wet Mill. Much hasn’t been known about Riripa rather than its densely shaded forestry located within the borders of the Bale mountain forest to the north east. The area stood out as one of the best for growing coffee given the abundance of rainfall early in the season and occasional showers towards the harvest. Haji Betro hails from the Dodola town which is 45 Km away from Shashemene town. Haji has long been in contact with our supplier for the partnership on the new wet mill which was just constructed in 2019.<br><br>### Harvest Details<br><br>Harvest started in all the major growing areas of Ethiopia in November. Cherry prices were quite high early in the harvest compared to previous years. Yields were overall superior which historically should have meant a reduction in cherry price further into the season, but new regulation and increased competition for coffee prevented it from happening. Coffees allowed to enter Addis for export were departmentalised starting with West Arsi, Limu, Sidamo finishing with Guji.<br><br>### Harvest<br><br>CHERRY SELECTION<br><br>Cheeries are collected manually and hard-sorted later. The cultivars are Welisho and Kurume.<br><br>PULPING AND PRE-GRADING<br><br>The cherries are pulped by a traditional Agaarde Discpulper. Skin and fruit pulp are removed before the machine grades the parchment in water as 1st or 2nd quality, determined by density. Parchment is then wet fermented for up to 72 hours.<br><br>WASHING AND GRADING IN CHANNELS<br><br>Coffees are washed in channels, and graded in water by density. The lower density (lower quality) will float and are removed, leaving only the denser and therefore higher quality beans which are separated as higher grade lots.<br><br>SOAKED UNDER CLEAN WATER<br><br>After fermentation, soaking takes place for 2 hours.<br><br>DRYING AND HANDSORTING<br><br>Coffee is then piled up in layers which are 2cm in height and dried over a 14 day period then followed by hand sorting for 2-4 hours.<br><br>When the coffee is processed naturally, the cherries are dried after these are graded by density.<br><br>### Warehousing<br><br>After drying the coffees will be packed in jute bags and stored in the local warehouse onsite, separated by process and grade. Lot sizes can vary from 100 – 300 bags. This process helps condition the coffee and achieve a more uniform humidity. They will normally be stored 1-2 months before they are moved. In some cases the parchment will be hand-sorted in the warehouse.<br><br>### Logistics<br><br>After the harvest season is over the coffees are moved to warehouses and dry mills in Addis. Trucking is expensive in Ethiopia. The coffee trucks must pass a local ECX checkpoint where its contents are graded and registered as an exportable product, before it continues to Addis Ababa.<br><br>### Dry milling<br><br>The coffee will sit in parchment in a warehouse in Addis. This is when our team will go to the warehouse and collect the samples from the specific stocklots. It remains in parchment until it is contracted and the destination for shipment is confirmed.<br><br>### Tropiq Lab<br><br>Our team on the ground in Addis personally collect samples which we cup and grade, and measure humidity and water activity. When the specific lot is selected for purchase we register the contract with a shipping destination and approve it for milling and shipment. We are present at the dry mill during processing, grading and bagging, and we immediately take a PSS sample for approval.<br><br>### Container stuffing and transport<br><br>We generally try to get our containers stuffed in Addis at the dry mills and moved to the port and straight on a vessel in Djibouti. This way we reduce the risk of delays or mistakes at port that frequently happen when moving coffee by truck for stuffing in Djibouti.</p>
+      <button type="button" class="text-yellow-600" data-action="read-more#toggle">Read more ↓</button>
+    </div>
+    <div class="map pl-px float float-right">
+      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/38.5,6.7500001,6,0,0/500x500?access_token=pk.eyJ1Ijoidm9sbGVycy12LWh1YiIsImEiOiJja3M1eGF2MmMya2twMnBvOWFkeG03N3JzIn0.OUrn9aqf93FRfy_Ydfo8uQ" class="float float-right" alt="Map">
+    </div>
+  </div>
+
+
+    <%= link_to shop_path(@shop) do %>
+      <div style="background-image: url(https://vhubproddata.blob.core.windows.net/vll-prod-storage-data-public/95308764dcfa175535206e12071488d5/596bbd59449851d26ccb1b310a5d1f80/s1920x500/d56317d7e6ac396ededdf291cde67c89.jpg);
+      background-size: cover; ">
+      <div class="text-logo" style="background-color: rgba(0, 0, 0, 0.6)">
+        <img class="shop-description-logo float-left" alt="Shop logo" src="https://vhubproddata.blob.core.windows.net/vll-prod-storage-data-public/95308764dcfa175535206e12071488d5/20fcc9960daab64dbb5d2178c31e9544/s500x500/4f0531dfbf0828dd1ae0abc45bbb8804.jpg">
+        <h3 class="text-xl text-white mt-5 mb-2">By Nordic Approach</h3>
+        <p class=" text-white"><%= @shop.shortDescription %></p>
+      </div>
+      </div>
+    <% end %>
+</div>

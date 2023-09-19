@@ -17,4 +17,27 @@
 .buttonofgotoshop a {
   display: block;
   padding: 10px 20px;
- }
+}
+.map img {
+  width: 250px;
+  height: 250px;
+}
+.producer-story-hiden {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--read-more-line-clamp, 6);
+}
+.shop-description-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+  /* line-height: 70px; */
+}
+.text-logo {
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
