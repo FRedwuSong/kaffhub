@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_913_132_133) do
+ActiveRecord::Schema[7.0].define(version: 20_230_922_185_421) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -24,13 +24,23 @@ ActiveRecord::Schema[7.0].define(version: 20_230_913_132_133) do
     t.datetime 'updated_at', null: false
   end
 
+  create_table 'producers', force: :cascade do |t|
+    t.string 'name'
+    t.string 'farm_name'
+    t.text 'story'
+    t.integer 'company_id'
+    t.integer 'num_farms'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
   create_table 'products', force: :cascade do |t|
     t.string 'name'
     t.text 'description'
     t.integer 'shop_id'
     t.boolean 'decaf'
     t.integer 'createdBy'
-    t.string 'producer'
+    t.integer 'producer_id'
     t.boolean 'specialOffer'
     t.string 'country'
     t.integer 'company_id'

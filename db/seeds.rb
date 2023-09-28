@@ -1,3 +1,4 @@
+# rubocop:disable Layout/LineLength
 # frozen_string_literal: true
 
 # This file should contain all the record creation needed to seed the database with its default values.
@@ -40,7 +41,7 @@
 
 # pp 'Company Nordic Approach and mock data was be ceeate'
 
-# Shop.destroy_all
+# # Shop.destroy_all
 # Shop.create!(
 #   [
 #     {
@@ -151,7 +152,7 @@ Product.create!(
       description: 'This is a great example of a Grade 2 out cupping many Grade 1s -- it is excellent quality for the price. We have also made sure the export prep is better than the general standard for a Grade 2. The name Magarissa refers to a profile and quality that Nordic is actively seeking when buying Grade 2s.\n\nThe area this washing station is located is in the borders of the Bale Mountain forest. The coffee growing in this area benefits from densely shaded forest. The altitude here ranges between 1900 - 2100 masl and there are 742 farmers who deliver cherry to the washing station.\n\nFOB: USD 7,50 / kg',
       shop_id: 1,
       createdBy: 1,
-      producer: '',
+      producer_id: 1,
       specialOffer: false,
       country: '',
       company_id: 1,
@@ -162,3 +163,19 @@ Product.create!(
     }
   ]
 )
+pp 'product fo Magarrissa Riripa Organic be create.'
+
+Producer.create!(
+  [
+    {
+      name: 'Nensebo Riripa',
+      farm_name: 'Riripa Washing Station',
+      story: "Average farm size : 1 - 2 hectares\n\nCertifications : Organic\n\nVegetation: Semi Forested and Garden\n\nAverage farm size: 0.5 - 2ha\n\nTrees per hectare: 1800 - 2400\n\nAverage cherry yield per tree: 3 kgs\n\n### Station Description\n\nThis station used to be sourced through a vertically integration agreement with the Haji Betro Wet Mill. Much hasn’t been known about Riripa rather than its densely shaded forestry located within the borders of the Bale mountain forest to the north east. The area stood out as one of the best for growing coffee given the abundance of rainfall early in the season and occasional showers towards the harvest. Haji Betro hails from the Dodola town which is 45 Km away from Shashemene town. Haji has long been in contact with our supplier for the partnership on the new wet mill which was just constructed in 2019.\n\n### Harvest Details\n\nHarvest started in all the major growing areas of Ethiopia in November. Cherry prices were quite high early in the harvest compared to previous years. Yields were overall superior which historically should have meant a reduction in cherry price further into the season, but new regulation and increased competition for coffee prevented it from happening. Coffees allowed to enter Addis for export were departmentalised starting with West Arsi, Limu, Sidamo finishing with Guji.\n\n### Harvest\n\nCHERRY SELECTION\n\nCheeries are collected manually and hard-sorted later. The cultivars are Welisho and Kurume.\n\nPULPING AND PRE-GRADING\n\nThe cherries are pulped by a traditional Agaarde Discpulper. Skin and fruit pulp are removed before the machine grades the parchment in water as 1st or 2nd quality, determined by density. Parchment is then wet fermented for up to 72 hours.\n\nWASHING AND GRADING IN CHANNELS\n\nCoffees are washed in channels, and graded in water by density. The lower density (lower quality) will float and are removed, leaving only the denser and therefore higher quality beans which are separated as higher grade lots.\n\nSOAKED UNDER CLEAN WATER\n\nAfter fermentation, soaking takes place for 2 hours.\n\nDRYING AND HANDSORTING\n\nCoffee is then piled up in layers which are 2cm in height and dried over a 14 day period then followed by hand sorting for 2-4 hours.\n\nWhen the coffee is processed naturally, the cherries are dried after these are graded by density.\n\n### Warehousing\n\nAfter drying the coffees will be packed in jute bags and stored in the local warehouse onsite, separated by process and grade. Lot sizes can vary from 100 – 300 bags. This process helps condition the coffee and achieve a more uniform humidity. They will normally be stored 1-2 months before they are moved. In some cases the parchment will be hand-sorted in the warehouse.\n\n### Logistics\n\nAfter the harvest season is over the coffees are moved to warehouses and dry mills in Addis. Trucking is expensive in Ethiopia. The coffee trucks must pass a local ECX checkpoint where its contents are graded and registered as an exportable product, before it continues to Addis Ababa.\n\n### Dry milling\n\nThe coffee will sit in parchment in a warehouse in Addis. This is when our team will go to the warehouse and collect the samples from the specific stocklots. It remains in parchment until it is contracted and the destination for shipment is confirmed.\n\n### Tropiq Lab\n\nOur team on the ground in Addis personally collect samples which we cup and grade, and measure humidity and water activity. When the specific lot is selected for purchase we register the contract with a shipping destination and approve it for milling and shipment. We are present at the dry mill during processing, grading and bagging, and we immediately take a PSS sample for approval.\n\n### Container stuffing and transport\n\nWe generally try to get our containers stuffed in Addis at the dry mills and moved to the port and straight on a vessel in Djibouti. This way we reduce the risk of delays or mistakes at port that frequently happen when moving coffee by truck for stuffing in Djibouti.",
+      company_id: 1,
+      num_farms: 742
+    }
+  ]
+)
+pp 'producer be create.'
+
+# rubocop:enable Layout/LineLength
